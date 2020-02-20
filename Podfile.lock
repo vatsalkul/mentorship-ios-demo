@@ -1,0 +1,16 @@
+PODS:
+  - SkyFloatingLabelTextField (3.8.0)
+
+DEPENDENCIES:
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+
+PODFILE CHECKSUM: 1976d4ebba585ccacb6c831f62a539448cadd6d0
+
+COCOAPODS: 1.8.4
