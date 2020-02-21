@@ -2,16 +2,15 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mentorship_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="mentorship_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,129 +136,187 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJN-X2-x7j">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fxa-gw-UXO" userLabel="Details Stack View">
+                                                <rect key="frame" x="30" y="30" width="354" height="276"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wHx-yt-Oz6" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-ES-Peb" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="59" width="354" height="39.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YIO-B5-Rhs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="118.5" width="354" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ4-WR-eyR" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="177.5" width="354" height="39.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1s-Xk-cDX" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="237" width="354" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-5k-Hcf">
+                                                <rect key="frame" x="157" y="522.5" width="100" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0bK-85-ciw"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Ic4-5y-oFi"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="SIGN UP"/>
+                                                <connections>
+                                                    <action selector="signUpPressed:" destination="rjd-ax-4WC" eventType="touchUpInside" id="Lwd-tg-ENb"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By pressing Sign Up Button you are agreeing to accept the Terms and Conditions of Mentorship System" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Y-ew-vdE">
+                                                <rect key="frame" x="30" y="438.5" width="354" height="54"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available to be as:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-oP-IOS">
+                                                <rect key="frame" x="138.5" y="346" width="137.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-4D-vFd">
+                                                <rect key="frame" x="87.5" y="386.5" width="239" height="22"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qQp-BN-RQd" userLabel="Mentee Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="22"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur9-vz-uCg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="xY5-8h-bjo"/>
+                                                                </constraints>
+                                                                <state key="normal" image="checkmark.circle" catalog="system"/>
+                                                                <state key="selected" image="checkmark.circle.fill" catalog="system"/>
+                                                                <connections>
+                                                                    <action selector="mentorCheckBoxTapped:" destination="rjd-ax-4WC" eventType="touchUpInside" id="0Yv-0a-mMd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-7v-eSk">
+                                                                <rect key="frame" x="35" y="0.0" width="55" height="22"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ur9-vz-uCg" firstAttribute="top" secondItem="qQp-BN-RQd" secondAttribute="top" id="YSh-Vk-TFr"/>
+                                                            <constraint firstItem="ur9-vz-uCg" firstAttribute="leading" secondItem="qQp-BN-RQd" secondAttribute="leading" id="Yeb-v9-yRB"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Euf-vT-JEJ" userLabel="Mentor Stack View">
+                                                        <rect key="frame" x="144" y="0.0" width="95" height="22"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-OV-fkb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="ZP0-Jx-xcX"/>
+                                                                </constraints>
+                                                                <state key="normal" image="checkmark.circle" catalog="system"/>
+                                                                <state key="selected" image="checkmark.circle.fill" catalog="system"/>
+                                                                <connections>
+                                                                    <action selector="menteeCheckBoxTapped:" destination="rjd-ax-4WC" eventType="touchUpInside" id="gS6-uM-ZDx"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJA-sh-Uax">
+                                                                <rect key="frame" x="35" y="0.0" width="60" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="dPt-H0-oCh"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="VdY-OV-fkb" firstAttribute="leading" secondItem="Euf-vT-JEJ" secondAttribute="leading" id="K9y-cd-Wfc"/>
+                                                            <constraint firstItem="VdY-OV-fkb" firstAttribute="top" secondItem="Euf-vT-JEJ" secondAttribute="top" id="Rsg-W6-VGd"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="ZKY-87-7uP"/>
+                                            <constraint firstItem="G8Y-ew-vdE" firstAttribute="leading" secondItem="MJN-X2-x7j" secondAttribute="leading" constant="30" id="AKy-jR-nFq"/>
+                                            <constraint firstItem="RX0-5k-Hcf" firstAttribute="top" secondItem="G8Y-ew-vdE" secondAttribute="bottom" constant="30" id="BUe-3i-NbY"/>
+                                            <constraint firstItem="zwv-oP-IOS" firstAttribute="top" secondItem="fxa-gw-UXO" secondAttribute="bottom" constant="40" id="Nsg-Ur-Ca9"/>
+                                            <constraint firstItem="zwv-oP-IOS" firstAttribute="centerX" secondItem="MJN-X2-x7j" secondAttribute="centerX" id="PJU-sK-xxv"/>
+                                            <constraint firstAttribute="height" constant="900" id="ZKY-87-7uP"/>
+                                            <constraint firstItem="RX0-5k-Hcf" firstAttribute="centerX" secondItem="MJN-X2-x7j" secondAttribute="centerX" id="aeL-H1-CvU"/>
+                                            <constraint firstAttribute="trailing" secondItem="G8Y-ew-vdE" secondAttribute="trailing" constant="30" id="cRR-V8-9F5"/>
+                                            <constraint firstItem="yQc-4D-vFd" firstAttribute="centerX" secondItem="MJN-X2-x7j" secondAttribute="centerX" id="gHK-Fe-nfX"/>
+                                            <constraint firstItem="yQc-4D-vFd" firstAttribute="top" secondItem="zwv-oP-IOS" secondAttribute="bottom" constant="20" id="j3j-At-KLJ"/>
+                                            <constraint firstItem="fxa-gw-UXO" firstAttribute="leading" secondItem="MJN-X2-x7j" secondAttribute="leading" constant="30" id="r4L-gh-TTQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="fxa-gw-UXO" secondAttribute="trailing" constant="30" id="t2y-rn-rS4"/>
+                                            <constraint firstItem="fxa-gw-UXO" firstAttribute="top" secondItem="MJN-X2-x7j" secondAttribute="top" constant="30" id="tJO-Wy-q63"/>
+                                            <constraint firstItem="G8Y-ew-vdE" firstAttribute="top" secondItem="yQc-4D-vFd" secondAttribute="bottom" constant="30" id="wl7-qX-Uep"/>
                                         </constraints>
                                     </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Ax-jb-NKm">
-                                        <rect key="frame" x="141.5" y="386.5" width="131" height="32"/>
-                                        <segments>
-                                            <segment title="Mentor"/>
-                                            <segment title="Mentee"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available to be as:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-oP-IOS">
-                                        <rect key="frame" x="138.5" y="346" width="137.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fxa-gw-UXO">
-                                        <rect key="frame" x="20" y="30" width="374" height="276"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wHx-yt-Oz6" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="39"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-ES-Peb" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                <rect key="frame" x="0.0" y="59" width="374" height="39.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YIO-B5-Rhs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                <rect key="frame" x="0.0" y="118.5" width="374" height="39"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ4-WR-eyR" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                <rect key="frame" x="0.0" y="177.5" width="374" height="39.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1s-Xk-cDX" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                <rect key="frame" x="0.0" y="237" width="374" height="39"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-5k-Hcf">
-                                        <rect key="frame" x="157" y="551.5" width="100" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="0bK-85-ciw"/>
-                                            <constraint firstAttribute="height" constant="40" id="Ic4-5y-oFi"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="SIGN UP"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By pressing Sign Up Button you are agreeing to accept the Terms and Conditions of Mentorship System" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Y-ew-vdE">
-                                        <rect key="frame" x="20" y="457.5" width="374" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="G8Y-ew-vdE" firstAttribute="leading" secondItem="hqL-Jh-08T" secondAttribute="leading" constant="20" id="6zL-42-CMF"/>
                                     <constraint firstItem="MJN-X2-x7j" firstAttribute="leading" secondItem="hqL-Jh-08T" secondAttribute="leading" id="CJ4-IJ-fFg"/>
-                                    <constraint firstAttribute="trailing" secondItem="fxa-gw-UXO" secondAttribute="trailing" constant="20" id="Iwt-gQ-MhL"/>
-                                    <constraint firstItem="G8Y-ew-vdE" firstAttribute="top" secondItem="4Ax-jb-NKm" secondAttribute="bottom" constant="40" id="LPr-Eq-xnQ"/>
-                                    <constraint firstItem="fxa-gw-UXO" firstAttribute="top" secondItem="hqL-Jh-08T" secondAttribute="top" constant="30" id="PcN-w4-mjn"/>
-                                    <constraint firstItem="zwv-oP-IOS" firstAttribute="top" secondItem="fxa-gw-UXO" secondAttribute="bottom" constant="40" id="UTo-Tm-9oB"/>
-                                    <constraint firstItem="zwv-oP-IOS" firstAttribute="centerX" secondItem="hqL-Jh-08T" secondAttribute="centerX" id="VV7-aV-IQ3"/>
                                     <constraint firstAttribute="trailing" secondItem="MJN-X2-x7j" secondAttribute="trailing" id="WOy-FB-tnp"/>
-                                    <constraint firstItem="4Ax-jb-NKm" firstAttribute="top" secondItem="zwv-oP-IOS" secondAttribute="bottom" constant="20" id="YgH-qE-GhA"/>
-                                    <constraint firstItem="RX0-5k-Hcf" firstAttribute="top" secondItem="G8Y-ew-vdE" secondAttribute="bottom" constant="40" id="d6z-Ys-SCr"/>
-                                    <constraint firstAttribute="trailing" secondItem="G8Y-ew-vdE" secondAttribute="trailing" constant="20" id="dNW-kn-Qjl"/>
                                     <constraint firstItem="MJN-X2-x7j" firstAttribute="width" secondItem="hqL-Jh-08T" secondAttribute="width" id="fPQ-iD-HCK"/>
-                                    <constraint firstItem="4Ax-jb-NKm" firstAttribute="centerX" secondItem="hqL-Jh-08T" secondAttribute="centerX" id="frj-pd-o43"/>
                                     <constraint firstAttribute="bottom" secondItem="MJN-X2-x7j" secondAttribute="bottom" constant="20" symbolic="YES" id="has-ee-O9w"/>
-                                    <constraint firstItem="RX0-5k-Hcf" firstAttribute="centerX" secondItem="hqL-Jh-08T" secondAttribute="centerX" id="sij-qT-AKG"/>
-                                    <constraint firstItem="fxa-gw-UXO" firstAttribute="leading" secondItem="hqL-Jh-08T" secondAttribute="leading" constant="20" id="wXc-en-0mO"/>
                                     <constraint firstItem="MJN-X2-x7j" firstAttribute="top" secondItem="hqL-Jh-08T" secondAttribute="top" id="zoU-My-Zzh"/>
                                 </constraints>
                             </scrollView>
@@ -276,13 +333,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hA1-Yw-s26"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="F1s-Xk-cDX" id="gyc-QH-emJ"/>
+                        <outlet property="emailTextField" destination="YIO-B5-Rhs" id="jJx-y5-6nW"/>
+                        <outlet property="nameTextField" destination="wHx-yt-Oz6" id="7S9-rT-NYm"/>
+                        <outlet property="passwordTextField" destination="MQ4-WR-eyR" id="MCj-IU-exY"/>
+                        <outlet property="usernameTextField" destination="TRm-ES-Peb" id="ifC-Ha-hrN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4u-F2-SeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="118"/>
+            <point key="canvasLocation" x="889.85507246376824" y="117.85714285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="64" height="60"/>
+        <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
         <image name="lock.fill" catalog="system" width="64" height="64"/>
         <image name="mentorship_system_logo" width="376.66665649414062" height="244.66667175292969"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>

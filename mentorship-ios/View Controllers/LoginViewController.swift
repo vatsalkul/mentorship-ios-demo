@@ -8,7 +8,7 @@
 
 import UIKit
 import SkyFloatingLabelTextField
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     
     @IBOutlet weak var usernameTextField: SkyFloatingLabelTextFieldWithIcon!

@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		8332F84723FF0B0200632951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F84623FF0B0200632951 /* AppDelegate.swift */; };
 		8332F84923FF0B0200632951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F84823FF0B0200632951 /* SceneDelegate.swift */; };
-		8332F84B23FF0B0200632951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F84A23FF0B0200632951 /* ViewController.swift */; };
+		8332F84B23FF0B0200632951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F84A23FF0B0200632951 /* LoginViewController.swift */; };
 		8332F84E23FF0B0200632951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8332F84C23FF0B0200632951 /* Main.storyboard */; };
 		8332F85023FF0B0500632951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8332F84F23FF0B0500632951 /* Assets.xcassets */; };
 		8332F85323FF0B0500632951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8332F85123FF0B0500632951 /* LaunchScreen.storyboard */; };
 		8332F85B23FF338A00632951 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85A23FF338A00632951 /* SignUpViewController.swift */; };
+		8332F85F23FF37BA00632951 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85E23FF37BA00632951 /* Register.swift */; };
+		83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3B23FFD06200890479 /* MSConstants.swift */; };
+		83DB6D3E23FFD0CA00890479 /* MSErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3D23FFD0CA00890479 /* MSErrors.swift */; };
+		83DB6D4223FFD2B200890479 /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D4123FFD2B200890479 /* RegisterUser.swift */; };
 		D641C0FF6D57E2F610203AB9 /* Pods_mentorship_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09507C5BBCF463918CC8C6DD /* Pods_mentorship_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +26,16 @@
 		8332F84323FF0B0200632951 /* mentorship-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentorship-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8332F84623FF0B0200632951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8332F84823FF0B0200632951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8332F84A23FF0B0200632951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8332F84A23FF0B0200632951 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8332F84D23FF0B0200632951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8332F84F23FF0B0500632951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8332F85223FF0B0500632951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8332F85423FF0B0500632951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8332F85A23FF338A00632951 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8332F85E23FF37BA00632951 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		83DB6D3B23FFD06200890479 /* MSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstants.swift; sourceTree = "<group>"; };
+		83DB6D3D23FFD0CA00890479 /* MSErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSErrors.swift; sourceTree = "<group>"; };
+		83DB6D4123FFD2B200890479 /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
 		C3D8D73D9FDCFD219B5483B5 /* Pods-mentorship-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship-ios.release.xcconfig"; path = "Target Support Files/Pods-mentorship-ios/Pods-mentorship-ios.release.xcconfig"; sourceTree = "<group>"; };
 		FA3809884BEC55ED1C004523 /* Pods-mentorship-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship-ios.debug.xcconfig"; path = "Target Support Files/Pods-mentorship-ios/Pods-mentorship-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,16 +82,68 @@
 		8332F84523FF0B0200632951 /* mentorship-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8332F85C23FF370800632951 /* Model */,
+				83DB6D3A23FFD05200890479 /* Utilities */,
+				83DB6D3F23FFD28300890479 /* Services */,
+				8341CFE423FFC39100A8B42C /* View Controllers */,
 				8332F84623FF0B0200632951 /* AppDelegate.swift */,
 				8332F84823FF0B0200632951 /* SceneDelegate.swift */,
-				8332F84A23FF0B0200632951 /* ViewController.swift */,
-				8332F85A23FF338A00632951 /* SignUpViewController.swift */,
 				8332F84C23FF0B0200632951 /* Main.storyboard */,
 				8332F84F23FF0B0500632951 /* Assets.xcassets */,
 				8332F85123FF0B0500632951 /* LaunchScreen.storyboard */,
 				8332F85423FF0B0500632951 /* Info.plist */,
 			);
 			path = "mentorship-ios";
+			sourceTree = "<group>";
+		};
+		8332F85C23FF370800632951 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8332F85D23FF379E00632951 /* requests */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8332F85D23FF379E00632951 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				8332F85E23FF37BA00632951 /* Register.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		8341CFE423FFC39100A8B42C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8332F84A23FF0B0200632951 /* LoginViewController.swift */,
+				8332F85A23FF338A00632951 /* SignUpViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83DB6D3A23FFD05200890479 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83DB6D3B23FFD06200890479 /* MSConstants.swift */,
+				83DB6D3D23FFD0CA00890479 /* MSErrors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83DB6D3F23FFD28300890479 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83DB6D4023FFD2A000890479 /* Requests */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83DB6D4023FFD2A000890479 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				83DB6D4123FFD2B200890479 /* RegisterUser.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		D1A10FCBE655FDB0620E8F75 /* Frameworks */ = {
@@ -209,10 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8332F84B23FF0B0200632951 /* ViewController.swift in Sources */,
+				8332F84B23FF0B0200632951 /* LoginViewController.swift in Sources */,
 				8332F84723FF0B0200632951 /* AppDelegate.swift in Sources */,
 				8332F85B23FF338A00632951 /* SignUpViewController.swift in Sources */,
 				8332F84923FF0B0200632951 /* SceneDelegate.swift in Sources */,
+				8332F85F23FF37BA00632951 /* Register.swift in Sources */,
+				83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */,
+				83DB6D4223FFD2B200890479 /* RegisterUser.swift in Sources */,
+				83DB6D3E23FFD0CA00890479 /* MSErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mentorship-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mentorship-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

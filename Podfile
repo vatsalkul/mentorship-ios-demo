@@ -7,5 +7,6 @@ target 'mentorship-ios' do
 
   # Pods for mentorship-ios
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'Alamofire', '~> 5.0'
 
 end
