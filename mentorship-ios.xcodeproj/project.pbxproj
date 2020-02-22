@@ -15,9 +15,10 @@
 		8332F85323FF0B0500632951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8332F85123FF0B0500632951 /* LaunchScreen.storyboard */; };
 		8332F85B23FF338A00632951 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85A23FF338A00632951 /* SignUpViewController.swift */; };
 		8332F85F23FF37BA00632951 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85E23FF37BA00632951 /* Register.swift */; };
+		839FD3F82401C03E00DD21F4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839FD3F72401C03E00DD21F4 /* Login.swift */; };
 		83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3B23FFD06200890479 /* MSConstants.swift */; };
 		83DB6D3E23FFD0CA00890479 /* MSErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3D23FFD0CA00890479 /* MSErrors.swift */; };
-		83DB6D4223FFD2B200890479 /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D4123FFD2B200890479 /* RegisterUser.swift */; };
+		83DB6D4223FFD2B200890479 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D4123FFD2B200890479 /* AuthService.swift */; };
 		D641C0FF6D57E2F610203AB9 /* Pods_mentorship_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09507C5BBCF463918CC8C6DD /* Pods_mentorship_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +34,10 @@
 		8332F85423FF0B0500632951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8332F85A23FF338A00632951 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8332F85E23FF37BA00632951 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		839FD3F72401C03E00DD21F4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		83DB6D3B23FFD06200890479 /* MSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstants.swift; sourceTree = "<group>"; };
 		83DB6D3D23FFD0CA00890479 /* MSErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSErrors.swift; sourceTree = "<group>"; };
-		83DB6D4123FFD2B200890479 /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
+		83DB6D4123FFD2B200890479 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C3D8D73D9FDCFD219B5483B5 /* Pods-mentorship-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship-ios.release.xcconfig"; path = "Target Support Files/Pods-mentorship-ios/Pods-mentorship-ios.release.xcconfig"; sourceTree = "<group>"; };
 		FA3809884BEC55ED1C004523 /* Pods-mentorship-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship-ios.debug.xcconfig"; path = "Target Support Files/Pods-mentorship-ios/Pods-mentorship-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8332F85E23FF37BA00632951 /* Register.swift */,
+				839FD3F72401C03E00DD21F4 /* Login.swift */,
 			);
 			path = requests;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 		83DB6D4023FFD2A000890479 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				83DB6D4123FFD2B200890479 /* RegisterUser.swift */,
+				83DB6D4123FFD2B200890479 /* AuthService.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -275,7 +278,8 @@
 				8332F84923FF0B0200632951 /* SceneDelegate.swift in Sources */,
 				8332F85F23FF37BA00632951 /* Register.swift in Sources */,
 				83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */,
-				83DB6D4223FFD2B200890479 /* RegisterUser.swift in Sources */,
+				839FD3F82401C03E00DD21F4 /* Login.swift in Sources */,
+				83DB6D4223FFD2B200890479 /* AuthService.swift in Sources */,
 				83DB6D3E23FFD0CA00890479 /* MSErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

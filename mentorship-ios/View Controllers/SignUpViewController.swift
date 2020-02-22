@@ -69,7 +69,7 @@ class SignUpViewController: UIViewController {
     func registerUser() {
         if validateDetails() {
             details = Register(name: nameTextField.text!, username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, terms_and_conditions_checked: true, need_mentoring: needMentoring, available_to_mentor: availableToMmentor)
-            RegisterUser.register(details: details)
+            AuthServices.register(details: details)
         }
         else {
             print("Unable to validate")

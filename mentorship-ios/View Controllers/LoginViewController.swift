@@ -10,7 +10,8 @@ import UIKit
 import SkyFloatingLabelTextField
 class LoginViewController: UIViewController {
 
-    
+    var loginDetails: Login!
+
     @IBOutlet weak var usernameTextField: SkyFloatingLabelTextFieldWithIcon!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextFieldWithIcon!
     
@@ -20,6 +21,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
+        loginDetails = Login(username: "vatsalkul", password: "")
+    }
+    @IBAction func loginPressed(_ sender: Any) {
+        AuthServices.login(user: loginDetails)
+        
     }
 }
 
