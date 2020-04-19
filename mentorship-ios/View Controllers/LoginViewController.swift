@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-        loginDetails = Login(username: "vatsalkul", password: "")
+        loginDetails = Login(username: "vatsalkul", password: "vatsal123")
     }
     @IBAction func loginPressed(_ sender: Any) {
         AuthServices.login(user: loginDetails)

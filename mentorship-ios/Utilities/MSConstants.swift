@@ -8,5 +8,5 @@
 
 import Foundation
 enum MSConstants {
-    static let baseUrl = "http://systers-mentorship-dev.eu-central-1.elasticbeanstalk.com/"
+    static let baseUrl = "http://127.0.0.1:5000/"
 }

@@ -15,6 +15,13 @@
 		8332F85323FF0B0500632951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8332F85123FF0B0500632951 /* LaunchScreen.storyboard */; };
 		8332F85B23FF338A00632951 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85A23FF338A00632951 /* SignUpViewController.swift */; };
 		8332F85F23FF37BA00632951 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332F85E23FF37BA00632951 /* Register.swift */; };
+		8379F893244C69370097876F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379F892244C69370097876F /* HomeViewController.swift */; };
+		8379F896244C697A0097876F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8379F895244C697A0097876F /* HomeCollectionViewCell.swift */; };
+		8379F899244C7D5B0097876F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379F898244C7D5B0097876F /* Home.storyboard */; };
+		8379F89B244C7D780097876F /* Relations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379F89A244C7D780097876F /* Relations.storyboard */; };
+		8379F89D244C7D810097876F /* Requests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379F89C244C7D810097876F /* Requests.storyboard */; };
+		8379F89F244C7D8A0097876F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379F89E244C7D8A0097876F /* Settings.storyboard */; };
+		8379F8A1244C7D970097876F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379F8A0244C7D970097876F /* Profile.storyboard */; };
 		839FD3F82401C03E00DD21F4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839FD3F72401C03E00DD21F4 /* Login.swift */; };
 		83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3B23FFD06200890479 /* MSConstants.swift */; };
 		83DB6D3E23FFD0CA00890479 /* MSErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB6D3D23FFD0CA00890479 /* MSErrors.swift */; };
@@ -34,6 +41,13 @@
 		8332F85423FF0B0500632951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8332F85A23FF338A00632951 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8332F85E23FF37BA00632951 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		8379F892244C69370097876F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8379F895244C697A0097876F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8379F898244C7D5B0097876F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8379F89A244C7D780097876F /* Relations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Relations.storyboard; sourceTree = "<group>"; };
+		8379F89C244C7D810097876F /* Requests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Requests.storyboard; sourceTree = "<group>"; };
+		8379F89E244C7D8A0097876F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8379F8A0244C7D970097876F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		839FD3F72401C03E00DD21F4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		83DB6D3B23FFD06200890479 /* MSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstants.swift; sourceTree = "<group>"; };
 		83DB6D3D23FFD0CA00890479 /* MSErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSErrors.swift; sourceTree = "<group>"; };
@@ -84,13 +98,14 @@
 		8332F84523FF0B0200632951 /* mentorship-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8379F894244C69640097876F /* Cells */,
 				8332F85C23FF370800632951 /* Model */,
 				83DB6D3A23FFD05200890479 /* Utilities */,
 				83DB6D3F23FFD28300890479 /* Services */,
 				8341CFE423FFC39100A8B42C /* View Controllers */,
+				8379F897244C7D2C0097876F /* Storboards */,
 				8332F84623FF0B0200632951 /* AppDelegate.swift */,
 				8332F84823FF0B0200632951 /* SceneDelegate.swift */,
-				8332F84C23FF0B0200632951 /* Main.storyboard */,
 				8332F84F23FF0B0500632951 /* Assets.xcassets */,
 				8332F85123FF0B0500632951 /* LaunchScreen.storyboard */,
 				8332F85423FF0B0500632951 /* Info.plist */,
@@ -120,8 +135,30 @@
 			children = (
 				8332F84A23FF0B0200632951 /* LoginViewController.swift */,
 				8332F85A23FF338A00632951 /* SignUpViewController.swift */,
+				8379F892244C69370097876F /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8379F894244C69640097876F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8379F895244C697A0097876F /* HomeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8379F897244C7D2C0097876F /* Storboards */ = {
+			isa = PBXGroup;
+			children = (
+				8332F84C23FF0B0200632951 /* Main.storyboard */,
+				8379F898244C7D5B0097876F /* Home.storyboard */,
+				8379F89A244C7D780097876F /* Relations.storyboard */,
+				8379F89C244C7D810097876F /* Requests.storyboard */,
+				8379F89E244C7D8A0097876F /* Settings.storyboard */,
+				8379F8A0244C7D970097876F /* Profile.storyboard */,
+			);
+			path = Storboards;
 			sourceTree = "<group>";
 		};
 		83DB6D3A23FFD05200890479 /* Utilities */ = {
@@ -218,8 +255,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8332F85323FF0B0500632951 /* LaunchScreen.storyboard in Resources */,
+				8379F89B244C7D780097876F /* Relations.storyboard in Resources */,
+				8379F8A1244C7D970097876F /* Profile.storyboard in Resources */,
 				8332F85023FF0B0500632951 /* Assets.xcassets in Resources */,
 				8332F84E23FF0B0200632951 /* Main.storyboard in Resources */,
+				8379F89D244C7D810097876F /* Requests.storyboard in Resources */,
+				8379F899244C7D5B0097876F /* Home.storyboard in Resources */,
+				8379F89F244C7D8A0097876F /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +319,8 @@
 				8332F85B23FF338A00632951 /* SignUpViewController.swift in Sources */,
 				8332F84923FF0B0200632951 /* SceneDelegate.swift in Sources */,
 				8332F85F23FF37BA00632951 /* Register.swift in Sources */,
+				8379F893244C69370097876F /* HomeViewController.swift in Sources */,
+				8379F896244C697A0097876F /* HomeCollectionViewCell.swift in Sources */,
 				83DB6D3C23FFD06200890479 /* MSConstants.swift in Sources */,
 				839FD3F82401C03E00DD21F4 /* Login.swift in Sources */,
 				83DB6D4223FFD2B200890479 /* AuthService.swift in Sources */,
